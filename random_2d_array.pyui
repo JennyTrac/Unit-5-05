@@ -1,0 +1,146 @@
+[
+  {
+    "class" : "View",
+    "attributes" : {
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "frame" : "{{0, 0}, {540, 540}}",
+    "selected" : false,
+    "nodes" : [
+      {
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "text" : "How many columns would you like?",
+          "font_name" : "<System>",
+          "name" : "columns_label",
+          "class" : "Label",
+          "alignment" : "left",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "8B9D76E4-D5CC-4ADA-BB99-0484AD45F6DC"
+        },
+        "frame" : "{{6, 46}, {292, 32}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "text" : "How many rows would you like?",
+          "font_name" : "<System>",
+          "name" : "rows_label",
+          "class" : "Label",
+          "alignment" : "left",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "08608312-A72A-4DB2-BB52-24CD683CC386"
+        },
+        "frame" : "{{6, 6}, {292, 32}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Button",
+        "attributes" : {
+          "font_size" : 15,
+          "title" : "Generate",
+          "name" : "generate_button",
+          "action" : "generate_touch_up_inside",
+          "class" : "Button",
+          "frame" : "{{230, 254}, {80, 32}}",
+          "uuid" : "BE0462AB-FD17-4567-8C30-776FFD4BA405"
+        },
+        "frame" : "{{230, 85}, {80, 32}}",
+        "selected" : true,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "TextField",
+        "attributes" : {
+          "font_size" : 17,
+          "font_name" : "<System>",
+          "autocorrection_type" : "default",
+          "name" : "rows_textfield",
+          "class" : "TextField",
+          "alignment" : "left",
+          "frame" : "{{170, 254}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "uuid" : "BA56B1E2-1EF7-4DC8-B576-C796F97BFE79"
+        },
+        "frame" : "{{306, 6}, {228, 32}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "TextField",
+        "attributes" : {
+          "font_size" : 17,
+          "font_name" : "<System>",
+          "autocorrection_type" : "default",
+          "name" : "columns_textfield",
+          "class" : "TextField",
+          "alignment" : "left",
+          "frame" : "{{170, 254}, {200, 32}}",
+          "spellchecking_type" : "default",
+          "uuid" : "9D4CEEC4-B3BB-4147-820A-53609D2F1868"
+        },
+        "frame" : "{{306, 46}, {228, 32}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "TextView",
+        "attributes" : {
+          "font_size" : 17,
+          "font_name" : "<System>",
+          "flex" : "WH",
+          "autocorrection_type" : "default",
+          "name" : "array_textview",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "alignment" : "left",
+          "frame" : "{{170, 170}, {200, 200}}",
+          "editable" : true,
+          "uuid" : "C51A546C-3087-44CE-959C-ECE1DD35361A"
+        },
+        "frame" : "{{6, 125}, {528, 267}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      },
+      {
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "text" : "",
+          "font_name" : "<System>",
+          "name" : "average_label",
+          "class" : "Label",
+          "alignment" : "center",
+          "frame" : "{{195, 254}, {150, 32}}",
+          "uuid" : "0605B183-C7D3-466F-BF9F-4608104F299D"
+        },
+        "frame" : "{{6, 400}, {528, 32}}",
+        "selected" : false,
+        "nodes" : [
+
+        ]
+      }
+    ]
+  }
+]
