@@ -10,23 +10,40 @@ public class RowsAndColumns {
     
     public static int[][] MakeArray (int rows, int columns)
     {
-    // make array
-    int[][] TheDoubleArray = new int[rows][columns];
-    
-    Random rand = new Random();
-    int max = 50;
-    int min = 1;
-    int random_number = 0;
-    for (int rowcounter = 0; rowcounter < TheDoubleArray.length; rowcounter++)
+    if ((rows < 0) || (columns <0))
         {
-        for (int columncounter = 0; columncounter < TheDoubleArray[rowcounter].length; columncounter++)
+        int [][] ReturnError = new int[Math.abs(rows)][Math.abs(columns)];
+        for (int errorr = 0; errorr < ReturnError.length; errorr++)
             {
-            TheDoubleArray[rowcounter][columncounter] = rand.nextInt(max - min) + min;
-            //System.out.println(TheDoubleArray[rowcounter][columncounter]);
-            }    
+            for (int errorc = 0; errorc < ReturnError[errorr].length; errorc++)
+                {
+                ReturnError[errorr][errorc] = -1;
+                }
+            }
+        
+        return ReturnError;
         }
     
-    return TheDoubleArray;
+    else
+        {
+        // make array
+        int[][] TheDoubleArray = new int[rows][columns];
+    
+        Random rand = new Random();
+        int max = 50+1;
+        int min = 1;
+        int random_number = 0;
+        for (int rowcounter = 0; rowcounter < TheDoubleArray.length; rowcounter++)
+            {
+            for (int columncounter = 0; columncounter < TheDoubleArray[rowcounter].length; columncounter++)
+                {
+                TheDoubleArray[rowcounter][columncounter] = rand.nextInt(max - min) + min;
+                //System.out.println(TheDoubleArray[rowcounter][columncounter]);
+                }    
+            }
+    
+        return TheDoubleArray;
+        }
     }
     
     public static double AverageOfDoubleArray (int[][] twodimensionalarray)
@@ -41,7 +58,7 @@ public class RowsAndColumns {
                 }
             }
         double the_average = total / QuantityOfNumbers;
-        System.out.println(the_average);
+        
         return the_average;
         }
     
@@ -70,10 +87,8 @@ public class RowsAndColumns {
             }
         System.out.println(ShowArray);
         }
-    }
-    
     // calculating and showing average
     double array_average = RowsAndColumns.AverageOfDoubleArray(DoubleArray);
     System.out.println("The average is: " + array_average);
-
+    }
 }
